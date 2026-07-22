@@ -1,42 +1,49 @@
+/* ==========================
+   Humpty Landing Page v0.3
+========================== */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#fff;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:"Pretendard",sans-serif;
+    background:#ffffff;
+    color:#222;
+}
+
+/* Hero */
+
 .hero{
-
     position:relative;
-
     width:100%;
-
-    height:100vh;
-
+    min-height:100vh;
     overflow:hidden;
 }
 
 .hero img{
-
     width:100%;
-
-    height:100%;
-
+    height:100vh;
     object-fit:cover;
+    transform:scale(1.08);
 }
 
 .overlay{
-
     position:absolute;
-
     inset:0;
-
-    background:rgba(0,0,0,.35);
-
+    background:
+    linear-gradient(
+        rgba(0,0,0,.20),
+        rgba(0,0,0,.48)
+    );
     z-index:1;
 }
 
@@ -44,11 +51,12 @@ body{
 
     position:absolute;
 
+    left:50%;
     top:50%;
 
-    left:50%;
-
     transform:translate(-50%,-50%);
+
+    width:min(90%,700px);
 
     text-align:center;
 
@@ -56,32 +64,38 @@ body{
 
     z-index:2;
 
-    width:90%;
+    animation:fadeUp 1.2s ease;
 }
 
 .hero h1{
 
-    font-size:52px;
+    font-size:clamp(44px,8vw,76px);
 
-    margin-bottom:20px;
+    font-weight:800;
+
+    letter-spacing:-2px;
+
+    margin-bottom:22px;
 }
 
 .subtitle{
 
-    font-size:28px;
+    font-size:clamp(24px,4vw,38px);
 
-    font-weight:bold;
+    line-height:1.45;
 
-    line-height:1.4;
+    font-weight:700;
 
-    margin-bottom:25px;
+    margin-bottom:28px;
 }
 
 .description{
 
-    font-size:18px;
+    font-size:clamp(16px,2vw,20px);
 
-    line-height:1.6;
+    line-height:1.8;
+
+    opacity:.95;
 
     margin-bottom:40px;
 }
@@ -90,24 +104,121 @@ body{
 
     display:inline-block;
 
-    background:#f4a300;
+    background:#F4A621;
 
     color:white;
 
-    padding:18px 45px;
+    padding:18px 42px;
 
-    border-radius:50px;
+    border-radius:999px;
 
     text-decoration:none;
 
-    font-size:20px;
+    font-size:18px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    transition:.3s;
+    transition:.25s;
 }
 
 .btn:hover{
 
-    background:#dd9200;
+    transform:translateY(-4px);
+
+    background:#E18E00;
+
+    box-shadow:0 16px 30px rgba(0,0,0,.25);
+}
+
+/* Scroll */
+
+.scroll{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    z-index:2;
+
+    font-size:14px;
+
+    opacity:.75;
+
+    animation:bounce 2s infinite;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translate(-50%,calc(-50% + 40px));
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translate(-50%,-50%);
+    }
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateX(-50%);
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero img{
+
+height:100vh;
+
+}
+
+.hero h1{
+
+margin-bottom:18px;
+
+}
+
+.subtitle{
+
+font-size:26px;
+
+}
+
+.description{
+
+font-size:17px;
+
+}
+
+.btn{
+
+width:100%;
+
+max-width:320px;
+
+}
+
 }
