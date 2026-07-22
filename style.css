@@ -1,5 +1,5 @@
 /* ==========================
-   Humpty Landing Page v0.3
+   HUMPTY Landing v0.3
 ========================== */
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
@@ -16,88 +16,86 @@ html{
 
 body{
     font-family:"Pretendard",sans-serif;
-    background:#ffffff;
+    background:#fff;
     color:#222;
 }
 
-/* Hero */
+/* -------------------------
+   HERO
+------------------------- */
 
 .hero{
     position:relative;
     width:100%;
-    min-height:100vh;
+    height:100vh;
     overflow:hidden;
 }
 
 .hero img{
     width:100%;
-    height:100vh;
+    height:100%;
     object-fit:cover;
-    transform:scale(1.08);
+    transform:scale(1.05);
 }
 
 .overlay{
     position:absolute;
     inset:0;
-    background:
-    linear-gradient(
-        rgba(0,0,0,.20),
-        rgba(0,0,0,.48)
-    );
-    z-index:1;
+    background:rgba(0,0,0,.38);
 }
 
 .hero-content{
 
     position:absolute;
 
-    left:50%;
     top:50%;
+    left:50%;
 
     transform:translate(-50%,-50%);
 
-    width:min(90%,700px);
+    width:90%;
+    max-width:700px;
 
     text-align:center;
 
-    color:white;
+    color:#fff;
 
     z-index:2;
 
-    animation:fadeUp 1.2s ease;
+    animation:fadeUp 1s ease;
 }
 
 .hero h1{
 
-    font-size:clamp(44px,8vw,76px);
+    font-size:clamp(52px,7vw,82px);
 
     font-weight:800;
 
-    letter-spacing:-2px;
+    margin-bottom:30px;
 
-    margin-bottom:22px;
+    line-height:1.1;
 }
 
 .subtitle{
 
-    font-size:clamp(24px,4vw,38px);
-
-    line-height:1.45;
+    font-size:clamp(28px,3vw,44px);
 
     font-weight:700;
 
-    margin-bottom:28px;
+    line-height:1.45;
+
+    margin-bottom:25px;
 }
 
 .description{
 
-    font-size:clamp(16px,2vw,20px);
+    font-size:20px;
 
     line-height:1.8;
 
     opacity:.95;
 
-    margin-bottom:40px;
+    margin-bottom:45px;
 }
 
 .btn{
@@ -106,52 +104,60 @@ body{
 
     background:#F4A621;
 
-    color:white;
-
-    padding:18px 42px;
-
-    border-radius:999px;
+    color:#fff;
 
     text-decoration:none;
+
+    padding:18px 44px;
+
+    border-radius:999px;
 
     font-size:18px;
 
     font-weight:700;
 
-    transition:.25s;
+    transition:.3s;
 }
 
 .btn:hover{
 
+    background:#df8f11;
+
     transform:translateY(-4px);
 
-    background:#E18E00;
-
-    box-shadow:0 16px 30px rgba(0,0,0,.25);
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
 }
 
-/* Scroll */
+/* -------------------------
+   Scroll
+------------------------- */
 
 .scroll{
 
     position:absolute;
 
-    bottom:30px;
-
     left:50%;
+
+    bottom:25px;
 
     transform:translateX(-50%);
 
-    color:white;
-
-    z-index:2;
+    color:#fff;
 
     font-size:14px;
 
-    opacity:.75;
+    letter-spacing:1px;
+
+    opacity:.8;
+
+    z-index:2;
 
     animation:bounce 2s infinite;
 }
+
+/* -------------------------
+   Animation
+------------------------- */
 
 @keyframes fadeUp{
 
@@ -159,7 +165,7 @@ body{
 
         opacity:0;
 
-        transform:translate(-50%,calc(-50% + 40px));
+        transform:translate(-50%,-40%);
     }
 
     to{
@@ -185,25 +191,21 @@ body{
 
 }
 
-/* Mobile */
+/* -------------------------
+   Mobile
+------------------------- */
 
 @media(max-width:768px){
 
-.hero img{
-
-height:100vh;
-
-}
-
 .hero h1{
 
-margin-bottom:18px;
+font-size:54px;
 
 }
 
 .subtitle{
 
-font-size:26px;
+font-size:30px;
 
 }
 
@@ -211,13 +213,13 @@ font-size:26px;
 
 font-size:17px;
 
+padding:0 15px;
+
 }
 
 .btn{
 
-width:100%;
-
-max-width:320px;
+width:280px;
 
 }
 
