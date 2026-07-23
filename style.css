@@ -224,3 +224,106 @@ width:280px;
 }
 
 }
+/* ========================= */
+/* OUR STORY */
+/* ========================= */
+
+.story{
+
+    padding:120px 10%;
+
+    background:#ffffff;
+
+}
+
+.story-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.story-image{
+
+    flex:1;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.story-text{
+
+    flex:1;
+
+}
+
+.story-subtitle{
+
+    color:#d8a24c;
+
+    letter-spacing:4px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.story-text h2{
+
+    font-size:48px;
+
+    line-height:1.3;
+
+    color:#222;
+
+    margin-bottom:30px;
+
+}
+
+.story-text p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666;
+
+    margin-bottom:18px;
+
+}
+
+@media(max-width:900px){
+
+.story-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.story-text h2{
+
+font-size:36px;
+
+}
+
+}
