@@ -709,31 +709,57 @@ font-size:40px;
 
 .slider{
 
-grid-template-columns:1fr;
+    display:block;
+
+    position:relative;
 
 }
 
 .slide{
 
-grid-template-columns:1fr;
+    display:grid;
 
-text-align:center;
+    grid-template-columns:1fr;
+
+    text-align:center;
 
 }
 
 .menu-info{
 
-text-align:center;
+    text-align:center;
 
 }
 
 .nav{
 
-display:flex;
+    position:absolute;
 
-justify-content:center;
+    top:180px;
 
-align-items:center;
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:20;
+
+}
+
+.prev{
+
+    left:10px;
+
+}
+
+.next{
+
+    right:10px;
 
 }
 
