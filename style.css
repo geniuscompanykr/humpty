@@ -709,7 +709,9 @@ font-size:40px;
 
 .slider{
 
-    display:block;
+    display:grid;
+
+    grid-template-columns:1fr;
 
     position:relative;
 
@@ -735,7 +737,9 @@ font-size:40px;
 
     position:absolute;
 
-    top:180px;
+    top:50%;
+
+    transform:translateY(-50%);
 
     width:48px;
 
@@ -753,13 +757,13 @@ font-size:40px;
 
 .prev{
 
-    left:10px;
+left:-10px;
 
 }
 
 .next{
 
-    right:10px;
+right:-10px;
 
 }
 
