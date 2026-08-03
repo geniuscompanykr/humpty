@@ -768,3 +768,168 @@ right:-10px;
 }
 
 }
+/* =========================
+   ORDER / RESERVATION
+========================= */
+
+.order{
+
+    padding:120px 10%;
+
+    background:#ffffff;
+
+}
+
+.order-container{
+
+    width:min(1100px,100%);
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.order-title p{
+
+    color:#d8a24c;
+
+    letter-spacing:5px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.order-title h2{
+
+    font-size:48px;
+
+    line-height:1.35;
+
+    color:#222;
+
+    margin-bottom:20px;
+
+}
+
+.order-title span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.order-buttons{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:55px;
+
+}
+
+.order-btn{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:150px;
+
+    padding:30px 20px;
+
+    border-radius:22px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    background:#faf8f4;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.07);
+
+    transition:.3s;
+
+}
+
+.order-btn strong{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.order-btn small{
+
+    font-size:15px;
+
+    color:#777;
+
+}
+
+.order-btn:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+@media(max-width:900px){
+
+.order{
+
+    padding:90px 7%;
+
+}
+
+.order-title h2{
+
+    font-size:36px;
+
+}
+
+.order-title span{
+
+    font-size:16px;
+
+}
+
+.order-buttons{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.order-btn{
+
+    min-height:120px;
+
+}
+
+.order-btn strong{
+
+    font-size:22px;
+
+}
+
+}
