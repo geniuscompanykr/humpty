@@ -38,6 +38,7 @@ const menus = [
 ];
 
 let current = 0;
+let autoSlide;
 
 const img = document.getElementById("menuImage");
 const eng = document.getElementById("menuEng");
@@ -55,17 +56,34 @@ function render(){
 
 }
 
+function startAutoSlide(){
+
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(() => {
+
+        current++;
+
+        if(current >= menus.length){
+            current = 0;
+        }
+
+        render();
+
+    }, 5000);
+
+}
+
 document.querySelector(".next").addEventListener("click",()=>{
 
     current++;
 
-    if(current>=menus.length){
-
-        current=0;
-
+    if(current >= menus.length){
+        current = 0;
     }
 
     render();
+    startAutoSlide();
 
 });
 
@@ -73,14 +91,14 @@ document.querySelector(".prev").addEventListener("click",()=>{
 
     current--;
 
-    if(current<0){
-
-        current=menus.length-1;
-
+    if(current < 0){
+        current = menus.length - 1;
     }
 
     render();
+    startAutoSlide();
 
 });
 
 render();
+startAutoSlide();
