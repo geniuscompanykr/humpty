@@ -1401,7 +1401,7 @@ right:-10px;
 
     display:grid;
 
-    grid-template-columns:1.3fr 1fr .8fr;
+    grid-template-columns:1.3fr 1fr 1fr;
 
     gap:60px;
 
@@ -1431,12 +1431,11 @@ right:-10px;
 
     flex-direction:column;
 
-    gap:25px;
+    gap:35px;
 
 }
 
-.footer-info span,
-.footer-order span{
+.footer-info span{
 
     display:block;
 
@@ -1460,23 +1459,25 @@ right:-10px;
 
 }
 
-.footer-order a{
+.footer-info a{
 
     display:inline-block;
 
-    color:#fff;
+    color:#F4A621;
+
+    font-size:20px;
+
+    font-weight:700;
 
     text-decoration:none;
 
-    line-height:1.8;
-
-    transition:.25s;
+    margin-bottom:8px;
 
 }
 
-.footer-order a:hover{
+.footer-info a:hover{
 
-    color:#F4A621;
+    color:#fff;
 
 }
 
