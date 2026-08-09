@@ -1016,3 +1016,366 @@ right:-10px;
     }
 
 }
+/* =========================
+   DELIVERY INFO
+========================= */
+
+.delivery{
+
+    padding:120px 10%;
+
+    background:#faf8f4;
+
+}
+
+.delivery-container{
+
+    width:min(1100px,100%);
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.delivery-title p{
+
+    color:#d8a24c;
+
+    letter-spacing:5px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.delivery-title h2{
+
+    font-size:48px;
+
+    line-height:1.35;
+
+    color:#222;
+
+    margin-bottom:20px;
+
+}
+
+.delivery-title span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+/* PRICE */
+
+.delivery-price{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-top:55px;
+
+}
+
+.price-box{
+
+    padding:35px 20px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.07);
+
+}
+
+.price-box strong{
+
+    display:block;
+
+    font-size:32px;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.price-box span{
+
+    color:#777;
+
+    font-size:17px;
+
+}
+
+.price-box.highlight{
+
+    background:#F4A621;
+
+}
+
+.price-box.highlight strong,
+.price-box.highlight span{
+
+    color:#fff;
+
+}
+
+
+/* AREA */
+
+.delivery-area{
+
+    margin-top:80px;
+
+}
+
+.delivery-area h3,
+.delivery-time h3{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+.area-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.area-card{
+
+    padding:35px 25px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.07);
+
+}
+
+.area-card span{
+
+    display:block;
+
+    color:#d8a24c;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.area-card strong{
+
+    font-size:22px;
+
+    color:#222;
+
+}
+
+
+/* TIME */
+
+.delivery-time{
+
+    margin-top:80px;
+
+}
+
+.time-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.time-card{
+
+    padding:40px 25px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.07);
+
+}
+
+.time-icon{
+
+    display:block;
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.time-card h4{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.time-card strong{
+
+    display:block;
+
+    font-size:20px;
+
+    color:#d8a24c;
+
+    margin-bottom:18px;
+
+}
+
+.time-card p{
+
+    color:#777;
+
+    line-height:1.8;
+
+}
+
+
+/* NOTICE */
+
+.delivery-notice{
+
+    margin-top:45px;
+
+    padding:25px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+}
+
+.delivery-notice p{
+
+    color:#777;
+
+    font-size:15px;
+
+    line-height:2;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .delivery{
+
+        padding:90px 7%;
+
+    }
+
+    .delivery-title h2{
+
+        font-size:36px;
+
+    }
+
+    .delivery-title span{
+
+        font-size:16px;
+
+    }
+
+    .delivery-price{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+        margin-top:40px;
+
+    }
+
+    .price-box strong{
+
+        font-size:28px;
+
+    }
+
+    .delivery-area{
+
+        margin-top:60px;
+
+    }
+
+    .delivery-area h3,
+    .delivery-time h3{
+
+        font-size:26px;
+
+    }
+
+    .area-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .area-card strong{
+
+        font-size:20px;
+
+    }
+
+    .delivery-time{
+
+        margin-top:60px;
+
+    }
+
+    .time-grid{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .time-card{
+
+        padding:35px 20px;
+
+    }
+
+}
