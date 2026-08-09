@@ -1529,3 +1529,19 @@ right:-10px;
     }
 
 }
+/* FOOTER PHONE LINK */
+
+.footer .footer-info a{
+    color:#F4A621 !important;
+    font-size:20px;
+    font-weight:700;
+    text-decoration:none !important;
+}
+
+.footer .footer-info a:visited{
+    color:#F4A621 !important;
+}
+
+.footer .footer-info a:hover{
+    color:#ffffff !important;
+}
